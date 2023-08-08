@@ -129,6 +129,7 @@ def set_audio_tags(filename, artists, genres, name, album_name, release_year, di
     tags = music_tag.load_file(filename)
     tags[ALBUMARTIST] = artists[0]
     tags[ARTIST] = conv_artist_format(artists)
+    genres = list(map(lambda x:x.capitalize(), genres))
     tags[GENRE] = genres[0] if not ZSpotify.CONFIG.get_all_genres() else ZSpotify.CONFIG.get_all_genres_delimiter().join(genres)
     tags[TRACKTITLE] = name
     tags[ALBUM] = album_name

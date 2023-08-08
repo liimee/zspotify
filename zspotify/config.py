@@ -60,7 +60,7 @@ CONFIG_VALUES = {
     PRINT_PROGRESS_INFO:        { 'default': 'True',                  'type': bool, 'arg': '--print-progress-info'        },
     PRINT_WARNINGS:             { 'default': 'True',                  'type': bool, 'arg': '--print-warnings'             },
     MD_ALLGENRES:               { 'default': 'False',                 'type': bool, 'arg': '--md-allgenres'               },
-    MD_GENREDELIMITER:          { 'default': ';',                     'type': str,  'arg': '--md-genredelimiter'          },
+    MD_GENREDELIMITER:          { 'default': '',                     'type': str,  'arg': '--md-genredelimiter'          },
     TEMP_DOWNLOAD_DIR:          { 'default': '',                      'type': str,  'arg': '--temp-download-dir'          }
 }
 
